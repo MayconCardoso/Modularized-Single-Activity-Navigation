@@ -1,4 +1,4 @@
-# single-activity-modularized-navigation
+# Modularized Single Activity Navigation
 This is a simple example of a Single Activity application. On this project, you will see how to implement a good navigation approach by using Google Navigation Component in a modularized app.
 
 Modularization is a very hot subject these days. There are hundreds of thousands of articles and examples on the internet that are really very good and very didactic. However, few of these articles represent the scenario of a real application, nor how to migrate from a monolithic and legacy project to a modular application.
