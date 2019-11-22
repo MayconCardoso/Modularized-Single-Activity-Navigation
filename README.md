@@ -5,6 +5,11 @@ Modularization is a very hot subject these days. There are hundreds of thousands
 
 With that, I decided to start a series of publications focused on modularization in real contexts. This is the first one where we have to create navigation between features of different modules.
 
+# Project Structure
+You are gonna see that I split the project into two folders: [libraries](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/tree/master/libraries) and [features](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/tree/master/features).
+
+In this project we have no problems with module organization since we have a small project. But as your project grows, it becomes difficult to keep your modules organized. My suggestion is to split your modules into segments and organize your [settings.gradle](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/blob/master/settings.gradle) so you can have a view like the photo shown below.
+
 # Libraries
 
 Here you can check out the [dependencies file.](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/blob/master/build-dependencies.gradle) But basically these are the libraries used in this example:
