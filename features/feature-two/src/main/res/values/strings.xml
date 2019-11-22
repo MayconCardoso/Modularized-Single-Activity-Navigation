@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">feature-two</string>
+    <string name="hint_feature_two_screen_one">This is the feature TWO - Screen ONE</string>
+    <string name="hint_feature_two_screen_two">This is the feature TWO - Screen TWO</string>
+    <string name="go_to_feature_one">Go to Feature One</string>
+    <string name="go_to_screen_two">Go to screen TWO</string>
+    <string name="start">If it helped you, please give us a star on Github</string>
+</resources>

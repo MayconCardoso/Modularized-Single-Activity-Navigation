@@ -1,0 +1,9 @@
+rootProject.name='Single Activity Example'
+
+include ':app'
+
+include ':features:feature-splashscreen'
+include ':features:feature-one'
+include ':features:feature-two'
+
+include ':libraries:library-shared-architecture'

@@ -1,0 +1,6 @@
+<resources>
+    <string name="hint_feature_one_screen_one">This is the feature ONE - Screen ONE</string>
+    <string name="hint_feature_one_screen_two">This is the feature ONE - Screen TWO</string>
+    <string name="go_to_feature_two">Go to feature TWO</string>
+    <string name="go_to_screen_two">Go to screen TWO</string>
+</resources>

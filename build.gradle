@@ -1,0 +1,51 @@
+apply from: 'build-modularization.gradle'
+apply from: 'build-dependencies.gradle'
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+
+    repositories {
+        google()
+        jcenter()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+    }
+}
+
+
+subprojects {
+    afterEvaluate { project ->
+        if (project.hasProperty('android')) {
+            android {
+                buildToolsVersion buildTools
+                compileSdkVersion compileSdk
+
+                defaultConfig {
+                    minSdkVersion minSdk
+                    targetSdkVersion targetSdk
+                    testInstrumentationRunner testInstrumentationRunner
+                }
+
+                compileOptions {
+                    sourceCompatibility javaVersion
+                    targetCompatibility javaVersion
+                }
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

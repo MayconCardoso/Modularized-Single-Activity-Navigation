@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    implementation globalDependencies.kotlinStdLib
+
+    implementation globalDependencies.appCompact
+
+    implementation globalDependencies.navigationFragment
+    implementation globalDependencies.navigationFragmentUi
+}

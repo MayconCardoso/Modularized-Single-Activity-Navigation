@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    implementation project(path: submodulesLibraries.sharedArc)
+
+    implementation globalDependencies.kotlinStdLib
+    implementation globalDependencies.koin
+
+    implementation globalDependencies.appCompact
+    implementation globalDependencies.constraintlayout
+}

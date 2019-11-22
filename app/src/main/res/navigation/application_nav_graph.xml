@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/application_nav_graph"
+    android:label="Splash Screen"
+    app:startDestination="@+id/splash_screen_navigation">
+
+    <navigation
+        android:id="@+id/splash_screen_navigation"
+        android:label="Splash Screen"
+        app:startDestination="@id/fragmentSplashScreen">
+
+        <fragment
+            android:id="@+id/fragmentSplashScreen"
+            android:name="com.mctech.feature.splashscreen.FragmentSplashScreen"
+            android:label="FragmentSplashScreen"
+            tools:layout="@layout/fragment_splashscreen" />
+        <action
+            android:id="@+id/action_global_feature_one"
+            app:destination="@id/feature_one"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_global_feature_two"
+            app:destination="@id/feature_two"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </navigation>
+
+    <navigation
+        android:id="@+id/feature_one"
+        android:label="Feature One"
+        app:startDestination="@id/fragmentFeatureOneScreenOne">
+
+        <fragment
+            android:id="@+id/fragmentFeatureOneScreenOne"
+            android:name="com.mctech.feature.one.FragmentFeatureOneScreenOne"
+            tools:layout="@layout/fragment_one_feature_one"
+            android:label="FragmentFeatureOneScreenOne" >
+
+            <action
+                android:id="@+id/action_fragmentFeatureOneScreenOne_to_fragmentFeatureOneScreenTwo"
+                app:destination="@id/fragmentFeatureOneScreenTwo"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragmentFeatureOneScreenTwo"
+            android:name="com.mctech.feature.one.FragmentFeatureOneScreenTwo"
+            tools:layout="@layout/fragment_two_feature_one"
+            android:label="FragmentFeatureOneScreenTwo" />
+
+        <action
+            android:id="@+id/action_global_feature_two"
+            app:destination="@id/feature_two"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </navigation>
+
+    <navigation
+        android:id="@+id/feature_two"
+        app:startDestination="@id/fragmentFeatureTwoScreenOne" >
+
+        <fragment
+            android:id="@+id/fragmentFeatureTwoScreenOne"
+            android:name="com.mctech.feature.two.FragmentFeatureTwoScreenOne"
+            tools:layout="@layout/fragment_one_feature_two"
+            android:label="FragmentFeatureOneScreenOne" >
+
+            <action
+                android:id="@+id/action_fragmentFeatureOneScreenOne_to_fragmentFeatureTwoScreenTwo"
+                app:destination="@id/fragmentFeatureTwoScreenTwo"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragmentFeatureTwoScreenTwo"
+            android:name="com.mctech.feature.two.FragmentFeatureTwoScreenTwo"
+            tools:layout="@layout/fragment_two_feature_two"
+            android:label="FragmentFeatureTwoScreenTwo" />
+
+    </navigation>
+
+</navigation>
