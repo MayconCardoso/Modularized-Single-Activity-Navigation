@@ -10,6 +10,9 @@ You are gonna see that I split the project into two folders: [libraries](https:/
 
 In this project we have no problems with module organization since we have a small project. But as your project grows, it becomes difficult to keep your modules organized. My suggestion is to split your modules into segments and organize your [settings.gradle](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/blob/master/settings.gradle) so you can have a view like the photo shown below.
 
+![Modularization structure](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/blob/master/.art/modules.png)
+
+
 # Libraries
 
 Here you can check out the [dependencies file.](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/blob/master/build-dependencies.gradle) But basically these are the libraries used in this example:
