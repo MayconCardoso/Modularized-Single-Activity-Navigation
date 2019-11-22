@@ -5,3 +5,9 @@ Modularization is a very hot subject these days. There are hundreds of thousands
 
 With that, I decided to start a series of publications focused on modularization in real contexts. This is the first one where we have to create navigation between features of different modules.
 
+# Libraries
+
+Here you can check out the [dependencies file.](https://github.com/MayconCardoso/Modularized-Single-Activity-Navigation/blob/master/build-dependencies.gradle) But basically these are the libraries used in this example:
+
+- [Koin](https://insert-koin.io/): For inject the dependencies.
+- [Navigation Component](https://developer.android.com/guide/navigation/): For the core navigation between fragments.
