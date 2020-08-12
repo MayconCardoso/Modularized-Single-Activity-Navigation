@@ -1,3 +1,7 @@
+# Deprecated
+This project is deprecated, you could check [this one](https://github.com/MayconCardoso/StockTradeTracking) instead.
+
+
 # Modularized Single Activity Navigation
 This is a simple example of a Single Activity application. On this project, you will see how to implement a good navigation approach by using Google Navigation Component in a modularized app.
 
